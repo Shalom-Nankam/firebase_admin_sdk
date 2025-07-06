@@ -82,7 +82,8 @@ class Credentials {
   /// [credentials] must be a path to a service account key JSON file or an
   /// object representing a service account key.
   static Credential cert(credentials) {
-    throw UnimplementedError();
+    return ServiceAccountCredential(credentials);
+
   }
 
   /// Returns [Credential] created from the provided refresh token that grants
